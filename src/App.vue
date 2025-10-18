@@ -4,6 +4,8 @@ import TaskForm from './components/TaskForm.vue';
 import type { Task, TaskFilter } from './types';
 import TaskList from './components/TaskList.vue';
 import FilterButton from './components/FilterButton.vue';
+import Calulator from './components/Calulator.vue';
+import Inputs from './components/Inputs.vue';
 
 
 const tasks=ref<Task[]>([])
@@ -80,7 +82,8 @@ const filteredTasks= computed(()=>{
 
     <TaskList :tasks="filteredTasks" @toggle-done="toggleDown" @remove-task="removeTask"/>
   </main>
-  
+  <Calulator/>
+  <Inputs/>
 </template>
 
 <style>
