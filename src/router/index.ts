@@ -3,6 +3,7 @@ import Todo from "../views/Todo.vue";
 import Home from "../views/Home.vue";
 import CountNumber from "../views/CountNumber.vue";
 import ShopView from "../views/ShopView.vue";
+import Login from "../views/Login.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -15,6 +16,7 @@ const routes = [
       requiresAuth: true,
     },
   },
+  { path: "/login", component: Login },
 ];
 
 const router = createRouter({

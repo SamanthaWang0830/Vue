@@ -10,6 +10,7 @@ const counter= useCounterStore()
     <router-link to="/shop" class="nav-link">Shop</router-link>
     <router-link to="/like" class="nav-link">{{counter.count}} Like(s)</router-link>
     <router-link to="/todo" class="nav-link">Todo</router-link>
+    <router-link to="/login" class="nav-link">Login</router-link>
   </nav>
   <router-view/>
 </div>
