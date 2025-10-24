@@ -18,15 +18,21 @@ const handleAdd=()=>{
 </script>
 
 <template>
+<router-link :to='`/product/${id}`'>
 <div class="product-card">
     <h3>{{ name }}</h3>
     <p>Price: ${{ price }}</p>
     <button @click="handleAdd">Add</button>
 </div>
+</router-link>
 </template>
 
 <!-- scoped 让当前组件的样式只作用在当前组件内部 -->
 <style scoped>
+.card-link{
+  text-decoration: none;
+  color: inherit;
+}
 .product-card {
   border: 1px solid #ccc;
   border-radius: 8px;
